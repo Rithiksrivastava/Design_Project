@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- google fonts for headings -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap:700:400:500:800" rel="stylesheet">
+    <!-- google fonts for links -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <!-- google fonts ends -->
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Webpage | Responsive Web Design Practice</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo">
+                <h1>Rithik's</h1>
+            </div>
+            <div class="toggle-container">
+                <i class="fas fa-bars fa-2x" id="toggle-btn"></i>
+            </div>
+        </header>
+        <!-- Sidebar starts -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <i class="fas fa-times fa-2x" id="cross-btn"></i>
+                <h1>Rithik's</h1>
+            </div>
+            <div class="category">
+                <ul>
+                    <li>Shirts</li>
+                    <li>Dresses</li>
+                    <li id="jeans">Jeans &nbsp; <i class="fas fa-caret-down"></i>
+                        <ul class="jeans-category">
+                            <li>Skinny</li>
+                            <li>Relaxed</li>
+                            <li>Bootcut</li>
+                            <li>Straight</li>
+                        </ul>
+                    </li>
+                    <li>Jackets</li>
+                    <li>Gymwears</li>
+                    <li>Blazers</li>
+                    <li>Shoes</li>
+                </ul>
+            </div>
+            <div class="contact">
+                <ul>
+                    <li>Contact</li>
+                    <li id="newsletter">Newsletter</li>
+                    <li>Subscribe</li>
+                </ul>
+            </div>
+        </aside>
+        <!-- Newsletter Modal Starts-->
+        <div class="modal-overlay">
+            <div class="modal-container">
+                <i class="fas fa-times fa-2x" id="newsletter-cross-btn"></i>
+                <h1>newsletter</h1>
+                <h2>Join our mailing list to receive latest updates on new products</h2>
+                <div class="newsletter-form-container">
+                    <input type="email" placeholder="Enter Your Email" required>
+                    <br>
+                    <button type="submit" id="newsletter-submit-button">Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <!-- Newsletter Modal Ends -->
+        <!-- sidebar Ends -->
+        <!-- main container starts -->
+        <main>
+            <div class="main-header">
+                <div class="main-header-heading">
+                    <h2>Jeans</h2>
+                </div>
+                <div class="main-header-svg">
+                    <i class="fas fa-shopping-cart fa-2x"></i>
+                    <i class="fas fa-search fa-2x"></i>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="img-container">
+                    <div class="img-text">
+                        <h1>New arrivals</h1>
+                        <h2>collection 2016</h2>
+                        <button>shop now</button>
+                    </div>
+                </div>
+                <div class="contents">
+                    <!-- single post starts -->
+                    <!-- <div class="content">
+                        <img src="img/jeans.jpg" alt="">
+                        <p>Ripped Jeans</p>
+                        <p class="price">$24.99</p>
+                    </div> -->
+                    <!-- single post ends -->
+                </div>
+            </div>
+        </main>
+        <!-- main container ends  -->
+    </div>
+    <!-- JS file -->
+    <script src="js/app.js"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+</body>
+
+</html>
